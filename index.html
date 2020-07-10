@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--subheader(offerzone)-->
+  <div id="offer">
+    <ul>
+      <li>Prices as low as 455</li>
+      <li>Get new skill risk free</li>
+      <li>Ends in time</li>
+    </ul>
+    <img onclick="offer()" class="offer-icon"
+      src="data:image/jpeg;base64,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"
+      alt="" />
+  </div>
+
+  <!--Header-tooltip-->
+  <header>
+    <ul id="header">
+      <li><img alt="" class="header-logo"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRpG_hwkCSE12E4KuxgYMJIl1OrsPcCBFVKyWkaW-N84gMaOmyT&usqp=CAU" />
+
+      <li class="tooltip">Category<span class="tooltiptext">category</span></li>
+      <li class="tooltip"> <input type="text" class="nav-search" id="myInput" onkeyup="filtering()"
+          placeholder="Search for anything..." /><span class="tooltiptext">search</span></li>
+      <li class="tooltip">Life Skills for business<span class="tooltiptext">Business</span></li>
+      <li class="tooltip">Teach on Life Skills<span class="tooltiptext">Teach</span></li>
+      <li class="tooltip" onclick="openCourseList()">My courses<span class="tooltiptext">courses</span></li>
+      <li class="tooltip"><img src="images/profile.jpg" style="font-size:30px;cursor:pointer" onclick="openProfileInfo()"
+          class="profile" /><span class="tooltiptext">profile</span></li>
+
+    </ul>
+    <div id="course-bar" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeCourseList()">&times;</a>
+      <a href="#">1.Modern React WIth Redux [2020 update]</a>
+      <a href="#">2.React router &React hooks</a>
+      <a href="#">3.Java for complete beginners</a>
+      <a href="#">4.Angular Js</a>
+    </div>
+  </header>
+
+  <!--Navigation-->
+  <nav>
+    <ul id="navbar">
+      <li> <a>Developement</a></li>
+      <li> <a> Business</a></li>
+      <li> <a>IT & software</a></li>
+      <li> <a>Office Productivity</a></li>
+      <li> <a>Personal Development</a></li>
+      <li> <a>Design</a></li>
+      <li> <a>Marketing</a></li>
+      <li> <a>Health & fitness</a></li>
+    </ul>
+   
+  </nav>
+
+  <main class="content">
+
+    <!-- section1-filtering search-->
+    <section class="filter-section">
+      <h6 class="primary">Topics recommended for you</h6>
+      <ul id="myUL">
+        <li class="lis"><button class="primary-button">React</button></li>
+        <li class="lis"><button class="primary-button">React Hooks</button></li>
+        <li class="lis"><button class="primary-button">JavaScript</button></li>
+        <li class="lis"><button class="primary-button">Node Js</button></li>
+        <li class="lis"><button class="primary-button">Web Development</button></li>
+        <li class="lis"><button class="primary-button">Red ux Framework</button></li>
+        <li class="lis"><button class="primary-button">React Native</a></li>
+        <li class="lis"><button class="primary-button">Mobile Development</button></li>
+        <li class="lis"><button class="primary-button">Redux for Javascript</button></li>
+        <li class="lis"><button class="primary-button">Front end Development</button></li>
+      </ul>
+      <!-- modal section -->
+      <div class="modal-wrapper" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <ul class="modal-sec">
+            <li> This course includes</li>
+            <li>19 hours on-demand video</li>
+            <li>1 downloadable resource</li>
+            <li>Full lifetime access</li>
+            <li>Access on mobile and TV</li>
+            <li>Certificate of Completion</li>
+          </ul>
+          <button class="primary-button">Add to cart</button>
+          <button class="primary-button">Buy now</button>
+        </div>
+    </section>
+
+    <!-- Section2-slide show-->
+    <h6 class="primary">List of courses available</h6>
+    <section class="slideshow-container">
+
+      <a class="prev" onclick="arrow(-1)">&#10094;</a>
+
+      <ul class="slide-wrapper fade ">
+        <li class="f-left tooltip"><img src="images/three.jpg" class="open-model">
+          <p>modern react with redux1</p><span>4 hr left</span>
+          <div class="tooltiptext1">By the end of this course you will get complete knowledge on auomation testing</div>
+        </li>
+        <li class="f-left tooltip"><img src="images/one.jpg">
+          <p>modern react with redux2</p><span>9 hr left</span>
+          <div class="tooltiptext1">At the end of this Course you will be able to understand how to put Load on Web
+            applciations and REST API's</div>
+        </li>
+        <li class="f-left tooltip"><img src="images/two.jpg">
+          <p>modern react with redux3</p><span>14 hr left</span>
+          <div class="tooltiptext1">By end of the course,You will be able to build fast and reliable Automation tests
+            for any Web Application using Cypress</div>
+        </li>
+      </ul>
+      <ul class="slide-wrapper fade ">
+        <li class="f-left tooltip"><img src="images/download.jpg">
+          <p>modern react with redux4</p><span>4 hr left</span>
+          <div class="tooltiptext1">Indepth knowledge of Redux </div>
+        </li>
+        <li class="f-left tooltip"><img src="images/four.jpg">
+          <p>modern react with redux5</p><span>9 hr left</span>
+          <div class="tooltiptext1">By the end of this course you will get complete knowledge on auomation testing</div>
+        </li>
+        <li class="f-left tooltip"><img src="images/download1.jpg">
+          <p>modern react with redux6</p><span>14 hr left</span>
+          <div class="tooltiptext1">By the end of this course you will get complete knowledge on auomation testing</div>
+        </li>
+      </ul>
+      <ul class="slide-wrapper fade ">
+        <li class="f-left tooltip"><img src="images/download 2.jpg">
+          <p class="text">modern react with redux7</p><span>4 hr left</span>
+          <div class="tooltiptext1">By the end of this course you will get complete knowledge on auomation testing</div>
+        </li>
+        <li class="f-left tooltip"><img src="images/five.jpg">
+          <p class="text">modern react with redux8</p><span>9 hr left</span>
+          <div class="tooltiptext1">By the end of this course you will get complete knowledge on auomation testing</div>
+        </li>
+        <li class="f-left tooltip"><img src="images/six.png">
+          <p class="text">modern react with redux9</p><span>14 hr left</span>
+          <div class="tooltiptext1">By the end of this course you will get complete knowledge on auomation testing</div>
+        </li>
+      </ul>
+      <a class="next" onclick="arrow(1)">&#10095;</a>
+    </section>
+    <br>
+
+
+    <!-- section3-accordion-->
+    <section>
+      <h6 class="primary">What to learn next</h6>
+      <p class="primary">Recommended for you</p>
+      <button class="accordion">React Js</button>
+      <ul class="panel">
+        <li class="f-left"><img src="images/one.jpg">
+          <p>Modern react with redux1</p>
+          <p>Rahul shetty</p><span>price:455</span>
+        </li>
+        <li class="f-left"><img src="images/aa.jpg">
+          <p>Modern react with redux2</p>
+          <p>Rahul shetty</p><span>price:455</span>
+        </li>
+        <li class="f-left"><img src="images/bb.jpg">
+          <p>Modern react with redux3</p>
+          <p>Rahul shetty</p><span>price:455</span>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <button class="accordion">Java Script</button>
+      <ul class="panel">
+        <li class="f-left"><img src="images/one.jpg">
+          <p>Modern react with redux4</p>
+        </li>
+        <li class="f-left"><img src="images/one.jpg">
+          <p>Modern react with redux5</p>
+        </li>
+        <li class="f-left"><img src="images/one.jpg">
+          <p>Modern react with redux6</p>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <button class="accordion">Material UI</button>
+      <ul class="panel">
+        <li class="f-left"><img src="images/one.jpg">
+          <p>Modern react with redux7</p>
+        </li>
+        <li class="f-left"><img src="images/one.jpg">
+          <p>Modern react with redux8</p>
+        </li>
+        <li class="f-left"><img src="images/one.jpg">
+          <p>Modern react with redux9</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Asidepart-curtain menu(profile)-->
+    <div id="myNav" class="overlay">
+      <a class="closebtn" onclick="closeProfileInfo()">X</a>
+      <div class="overlay-content">
+        <form class="myNav" id="form">
+          <h3>Public Profile</h3>
+          <p>Add information about yourself</p>
+          <ul class="text-start">
+            <li><label for="fname">FirstName:</label>
+              <input type="text" id="fname"></li>
+            <li><label for="lname">LastName:</label>
+              <input type="text" id="lname"></li>
+            <li><label for="age">Add profesional headline:</label>
+              <input type="text" id="age"></li>
+            <li><label for="Link">Add Twitter link:</label>
+              <input type="text" id="Link"></li>
+            <li><label for="">Language familar:</label>
+              <select id="balance" class="form-control m-2">
+                <option>English</option>
+                <option>Tamil</option>
+              </select></li>
+            <li><label for="membership">Membership:</label>
+              <select id="membership" class="form-control m-2">
+                <option>Yes</option>
+                <option>No</option>
+              </select></li>
+        </form>
+
+        <div>
+          <button id="submit" onclick="submitData()">Onsubmit</button>
+          <table id="addtable" class="table-saved">
+          </table>
+        </div>
+      </div>
+    </div>
+    <script>
+      //hide and show offer section
+      function offer() {
+        let x = document.getElementById("offer");
+        `${x.style.display === "none" ? x.style.display = "block" : x.style.display = "none"}`
+
+      }
+      //modal
+      let modal = document.getElementsByClassName("modal-wrapper")[0];
+      let showmodel = document.getElementsByClassName("open-model")[0];
+      showmodel.onclick = function () {
+        modal.style.display = "block";
+      }
+ window.navigator.geolocation.getCurrentPosition(
+      (position)=>console.log(position),
+      (err)=>console.log(err)
+    )
+      //filtering
+      function filtering() {
+        let input = document.getElementById("myInput");
+       
+        let li = document.getElementsByClassName("lis");
+        for (let i = 0; i < li.length; i++) {
+          let a = li[i].getElementsByTagName("button")[0];
+          let txtValue = a.innerText;
+          `${txtValue.toUpperCase().indexOf(input.value.toUpperCase()) > -1 ? li[i].style.display = "" : li[i].style.display = "none"}`
+        }
+      }
+      //sidenav
+      function openCourseList() {
+        document.getElementById("course-bar").style.width = "250px";
+      }
+      function closeCourseList() {
+        document.getElementById("course-bar").style.width = "0px";
+      }
+      //curtain menu
+      function openProfileInfo() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      function closeProfileInfo() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+
+      //sticky navbar
+      window.onscroll = function () { stickbar() };
+      let navbar = document.getElementById("navbar");
+  let z = navbar.offsetTop;
+      function stickbar() {
+        `navbar${window.pageYOffset >= z ? navbar.classList.add("stickybar") : navbar.classList.remove("stickybar")}`
+      }
+
+      //slideshow
+      let slideIndex = 1;
+      carousel(slideIndex);
+      function arrow(n) {
+        carousel(slideIndex += n);
+      }
+            function carousel(n) {
+        let x = document.getElementsByClassName("slide-wrapper");
+        if (n < 1) { slideIndex = x.length }//left arrow
+        if (n > x.length) { slideIndex = 1 }//right arrow
+        for (let i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+      }
+      //accordion
+      let a = document.getElementsByClassName("accordion");
+      for (let i = 0; i < a.length; i++) {
+        a[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          let b = this.nextElementSibling;//upnext element
+          `${b.style.display === "block" ? b.style.display = "none" : b.style.display = "block"}`
+        });
+      }
+      //modal
+      let span = document.getElementsByClassName("close")[0];
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+    </script>
+</body>
+
+</html>
